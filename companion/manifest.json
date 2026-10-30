@@ -1,28 +1,37 @@
 {
-	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
-	"type": "connection",
-	"id": "your-module-name",
-	"name": "your-module-name",
-	"shortname": "module-shortname",
-	"description": "A short one line description of your module",
-	"version": "0.0.0",
-	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-your-module-name.git",
-	"bugs": "https://github.com/bitfocus/companion-module-your-module-name/issues",
-	"maintainers": [
-		{
-			"name": "Your name",
-			"email": "Your email"
-		}
-	],
-	"runtime": {
-		"type": "node26",
-		"api": "nodejs-ipc",
-		"apiVersion": "0.0.0",
-		"entrypoint": "../src/main.js"
-	},
-	"legacyIds": [],
-	"manufacturer": "Your company",
-	"products": ["Your product"],
-	"keywords": []
+  "$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+  "id": "cuemark-cuemark",
+  "name": "Cuemark",
+  "shortname": "cuemark",
+  "description": "Call a show from Cuemark: take cues, step the script line by line, and read what is on deck.",
+  "manufacturer": "Cuemark",
+  "products": [
+    "Cuemark"
+  ],
+  "keywords": [
+    "Stage Management",
+    "Theatre",
+    "Prompt Book",
+    "Cue",
+    "Show Caller"
+  ],
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "git+https://github.com/bitfocus/companion-module-cuemark-cuemark.git",
+  "bugs": "https://github.com/bitfocus/companion-module-cuemark-cuemark/issues",
+  "maintainers": [
+    {
+      "name": "Steve French",
+      "email": "support@cuemark.co.uk"
+    }
+  ],
+  "legacyIds": [
+    "cuemark"
+  ],
+  "runtime": {
+    "type": "node22",
+    "api": "nodejs-ipc",
+    "apiVersion": "0.0.0",
+    "entrypoint": "../src/main.js"
+  }
 }
