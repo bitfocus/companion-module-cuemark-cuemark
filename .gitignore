@@ -1,8 +1,9 @@
 node_modules/
-pkg/
-*.tgz
-DEBUG-PACKAGED
+package-lock.json
+  /pkg
+  /*.tgz
+  DEBUG-*
+  /.yarn
 
 # Yarn, as Bitfocus builds modules with it.
-.yarn/
 .pnp.*
