@@ -8,9 +8,11 @@
  * built on it simply did not start on the Companion 4 most booths have
  * ("Connection is not running"). Companion 3.5 keeps the 1.1.0 .tgz, built on
  * 1.11. The class itself lives in
- * index.js, so the self-test can load it without starting anything.
+ * index.js, so the self-test can load it without starting anything; the
+ * upgrade scripts in upgrades.js.
  */
-import { runEntrypoint } from '@companion-module/base';
-import CuemarkInstance, { UpgradeScripts } from './index.js';
+import { runEntrypoint } from '@companion-module/base'
+import CuemarkInstance from './index.js'
+import { UpgradeScripts } from './upgrades.js'
 
-runEntrypoint(CuemarkInstance, UpgradeScripts);
+runEntrypoint(CuemarkInstance, UpgradeScripts)

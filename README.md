@@ -67,15 +67,17 @@ As companion.free ▸ For developers ▸ Releasing your module now describes it:
 1. **Ask for the repository** — done: Bitfocus approved it on 25 October 2026
    as https://github.com/bitfocus/companion-module-cuemark-cuemark, so the
    manifest's `id` is `cuemark-cuemark` (the repository's name without
-   `companion-module-`), with `cuemark` kept in `legacyIds` so a connection
-   made with the hand-installed .tgz carries over. Questions go to
+   `companion-module-`). `legacyIds` is empty: the hand-installed .tgz builds
+   used the id `cuemark`, but that was never a published module, and Bitfocus's
+   review (1.2.0, H1) asked for it to go — so a connection made with one of
+   those is added again, once, as Cuemark. Questions go to
    `#module-development` on the Bitfocus Slack (https://bfoc.us/ke7e9dqgaz).
 2. **Push this directory** to that repository as its root: `companion/`,
    `src/`, `scripts/`, `package.json`, `yarn.lock`, `.yarnrc.yml`, `README.md`,
    `LICENSE`, `.gitignore`. `package.json`'s licence must be MIT (it is).
-3. **Release a version.** Set `version` in `package.json` (`1.2.0` now; the
+3. **Release a version.** Set `version` in `package.json` (`1.2.1` now; the
    build copies it into the manifest, whose own `version` stays `0.0.0`), push
-   a tag `v1.2.0`, then in the portal: My Connections ▸ the module ▸
+   a tag `v1.2.1`, then in the portal: My Connections ▸ the module ▸
    **Submit Version** ▸ choose the tag (tick *Is Prerelease* for a beta) ▸
    Submit. It shows as Pending.
 4. A volunteer reviews it; feedback comes through the portal. Once approved
